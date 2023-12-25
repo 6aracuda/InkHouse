@@ -29,7 +29,7 @@ a {
   flex-shrink: 0;
 }
 .logo {
-  display: flex;
+  display: inline-flex;
   color: #598d66;
   font-family: Raleway;
   font-size: 20px;
@@ -50,6 +50,20 @@ a {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+}
+.nav-menu__footer--first-child {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 6px;
+  font-family: Raleway;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.footer-nav-menu {
+  display: flex;
+  gap: 60px;
 }
 .bird__big {
   color: #2c2d35;
@@ -147,6 +161,11 @@ a {
   align-items: flex-start;
   border-radius: 20px;
   background: #d4e8d9;
+  transition: 1s;
+}
+.btn-choose:first-child {
+  background-color: #376b44;
+  color: white;
 }
 .country-buttons {
   display: flex;
@@ -240,7 +259,7 @@ a {
   margin: 0 auto;
   max-width: 1440px;
   padding: 0px 165px 70px 165px;
-  background-image: url(/assets/pic_background.png);
+  background-image: url(../assets/pic_background.png);
   background-color: black;
   background-repeat: no-repeat;
   background-size: cover;
@@ -314,7 +333,7 @@ a {
   width: 445px;
   height: 440px;
   flex-shrink: 0;
-  background: url(/assets/frame.svg);
+  background: url(../assets/frame.png);
   background-size: 100%;
   background-repeat: no-repeat;
 }
@@ -333,15 +352,24 @@ a {
   max-width: 1440px;
   padding: 23px 165px 23px 165px;
   background: #e1ede6;
-}
-.footer-nav {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+}
+.footer-nav-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
 }
 .social-icons {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  color: #86928b;
+  font-family: Raleway;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 14.4px */
+  gap: 10px;
 }
 .icons {
   display: flex;
@@ -364,8 +392,7 @@ a {
   line-height: normal;
 }
 .number-place {
-  padding: 35px 0 0 0;
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
   gap: 8px;
 }
@@ -376,4 +403,16 @@ a {
   font-style: normal;
   font-weight: 500;
   line-height: 120%; /* 14.4px */
+}
+#footer-name {
+  color: black;
+}
+#germany {
+  display: none;
+}
+#england {
+  display: none;
+}
+.footer-li {
+  color: #86928b;
 }
