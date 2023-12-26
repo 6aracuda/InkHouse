@@ -6,6 +6,9 @@
 }
 a {
   color: #598d66;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 .header-container {
   margin: 0 auto;
@@ -15,7 +18,6 @@ a {
   justify-content: center;
   align-items: center;
   gap: 497px;
-  flex-shrink: 0;
   background: #e1ede6;
 }
 .main-container {
@@ -51,7 +53,7 @@ a {
   font-weight: 500;
   line-height: normal;
 }
-.nav-menu__footer--first-child {
+.nav-menu__footer {
   display: inline-flex;
   flex-direction: column;
   gap: 6px;
@@ -61,7 +63,7 @@ a {
   font-weight: 500;
   line-height: normal;
 }
-.footer-nav-menu {
+.nav-wrapper {
   display: flex;
   gap: 60px;
 }
