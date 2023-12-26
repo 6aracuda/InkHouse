@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -7,37 +7,48 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/media.css" />
+    <!-- Подключить локально   в идеале woof woof2  -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Jost:wght@400;600&family=Quicksand:wght@500&family=Rajdhani&family=Raleway:wght@500&display=swap"
       rel="stylesheet"
     />
+    <!-- favicon gen  -->
     <link rel="shortcut icon" href="assets/logo.ico" type="image/x-icon" />
   </head>
   <body>
-    <header>
-      <div class="header-container">
-        <div class="logo">
-          <a href="#"
-            ><img src="assets/logo.png" alt="logo" />
-            <p>Ink. House</p></a
-          >
+    <header class="container-fluid">
+      <div class="container">
+        <div class="header-row">
+          <div class="header-logo">
+            <div>
+              <a href="#">
+                <img src="assets/logo.svg" alt="logo" />
+              </a>
+            </div>
+            <div class="header-logo__title">Ink. House</div>
+          </div>
+          <nav>
+            <ul class="header-menu">
+              <li><a class="header-menu__link" href="#">Репродукции</a></li>
+              <li><a class="header-menu__link" href="#">О нас</a></li>
+              <li><a class="header-menu__link" href="#">Новинки</a></li>
+              <li>
+                <!-- Заменить на svg -->
+                <!-- Button prior -->
+                <a href="#"
+                  ><img src="assets/cart.png" alt="shopping cart"
+                /></a>
+              </li>
+            </ul>
+          </nav>
         </div>
-        <nav>
-          <ul class="nav-menu">
-            <li><a href="#">Репродукции</a></li>
-            <li><a href="#">Новинки</a></li>
-            <li><a href="#">О нас</a></li>
-            <li>
-              <a href="#"><img src="assets/cart.png" alt="shopping cart" /></a>
-            </li>
-          </ul>
-        </nav>
       </div>
     </header>
     <main>
-      <div class="main-container">
+      <!-- Container  -->
+      <div class="container">
         <div class="hero">
           <div class="bird"><img src="assets/bird.png" alt="bird" /></div>
           <div class="bird-elements">
@@ -50,16 +61,31 @@
                 Редкие произведения, доступные цены.
               </p>
             </div>
+            <!-- Найминг -->
             <div class="button">
-              <button class="btn btn-products">Продукция</button>
+              <button class="btn btn-products">Заказать</button>
+              <button class="btn btn-products">Заказать услугу</button>
             </div>
           </div>
         </div>
       </div>
+      <div class="container">
+        <!-- Grid  -->
+        <div class="grid">
+          <div class="grid__item">1</div>
+          <div class="grid__item">2</div>
+          <div class="grid__item">3</div>
+          <div class="grid__item">4</div>
+          <div class="grid__item">5</div>
+          <div class="grid__item">6</div>
+        </div>
+      </div>
+
       <div class="main-container__pd">
         <div class="main-line">
           <p>Репродукции</p>
           <div class="country-buttons">
+            <!-- Прослушаватель событий -->
             <button onclick="france()" class="btn-choose" id="fr">
               Франция
             </button>
@@ -309,29 +335,36 @@
         </div>
       </div>
       <div class="main-container__pc">
-        <div class="pic-container">
-          <div class="pic-french-author">
-            <img src="assets/Star.png" alt="star" />
-            <p>Новая коллекция французских авторов</p>
+        <div class="container">
+          <div class="pic-container">
+            <!-- flce col -->
+            <!-- 1колонка -->
+            <div class="pic-french-author">
+              <img src="assets/Star.png" alt="star" />
+              <p>Новая коллекция французских авторов</p>
+            </div>
+            <div class="pic-text">
+              <p>
+                Сложно сказать, почему акционеры крупнейших компаний призывают
+                нас к новым свершениям, которые, в свою очередь, должны быть
+                заблокированы в рамках своих собственных рациональных
+                ограничений.
+              </p>
+              <p>
+                Принимая во внимание показатели успешности, граница обучения
+                кадров предопределяет высокую востребованность направлений
+                прогрессивного развития.
+              </p>
+            </div>
           </div>
-          <div class="pic-text">
-            <p>
-              Сложно сказать, почему акционеры крупнейших компаний призывают нас
-              к новым свершениям, которые, в свою очередь, должны быть
-              заблокированы в рамках своих собственных рациональных ограничений.
-            </p>
-            <p>
-              Принимая во внимание показатели успешности, граница обучения
-              кадров предопределяет высокую востребованность направлений
-              прогрессивного развития.
-            </p>
+          <!-- 2 колонка от flex col -->
+          <div class="button-read">
+            <button class="btn btn-read">Ознакомиться</button>
           </div>
-        </div>
-        <div class="button-read">
-          <button class="btn btn-read">Ознакомиться</button>
         </div>
       </div>
       <div class="main-container__bt">
+        <!-- ТУт изображение не back -->
         <div class="frame"></div>
         <div class="frame-text">
           <p class="frame-team">Наша команда</p>
@@ -349,8 +382,8 @@
         </div>
       </div>
     </main>
-    <footer>
-      <div class="footer-container">
+    <footer class="container-fluid">
+      <div class="container">
         <div class="footer-nav-wrapper">
           <div class="logo">
             <img src="assets/logo.png" alt="logo" />
@@ -380,7 +413,10 @@
           </ul>
         </nav>
         <div class="social-icons">
+          <!-- ul -->
           <div class="icons">
+            <!-- li  > a > img -->
+            <!-- svg -->
             <a href="#"><img src="assets/social/fb.png" alt="facebook" /></a>
             <a href="#"><img src="assets/social/ig.png" alt="instagram" /></a>
             <a href="#"><img src="assets/social/yt.png" alt="youtube" /></a>
